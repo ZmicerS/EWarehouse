@@ -1,19 +1,19 @@
 # EWarehouse
-This application is an entry-level skeleton for organizing the work of an e-warehouse of books.
-This is a Single Page Application.
+This application is an entry-level skeleton for organizing the work of an e-warehouse of books.  
+This is a Single Page Application.  
 
-Framework Angular version 8 is used, to implement the client
-Used by Lazy loading modules.
-Several HttpInterceptors are used.
-ErrorHandler is used.
-Implemented several unit tests for Angular.
+Framework Angular version 8 is used, to implement the client.  
+Used by Lazy loading modules.  
+Several HttpInterceptors are used.  
+ErrorHandler is used.  
+Implemented several unit tests for Angular.  
 
-The server side is implemented by ASP.NET Core.v2.2
-The server side uses a multi-layer architecture.
-MySql is used as the database.
-To work with the database, the Entity Framework Core Code First is used.
-For CRUD operations UnitOfWork pattern is implemented.
-Use the Fluent API to create tables.
-For authorization, a JWT token is used.
-Used by AutoMapper, Logger.
+The server side is implemented by ASP.NET Core.v2.2.  
+The server side uses a multi-layer architecture.  
+MySql is used as the database.  
+To work with the database, the Entity Framework Core Code First is used.  
+For CRUD operations UnitOfWork pattern is implemented.  
+Use the Fluent API to create tables.  
+For authorization, a JWT token is used.  
+Used by AutoMapper, Logger.  
 There are several unit tests with xUnit.
