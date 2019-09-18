@@ -12,6 +12,7 @@ namespace EWarehouse.Tests
 {
     public class UnitOfWorkUnitTests
     {
+        [Fact]
         public async void CreateAsyncMethodAddNewUser()
         {
             var logger = new Mock<ILogger>();
