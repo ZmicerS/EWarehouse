@@ -17,8 +17,8 @@ Use the Fluent API to create tables.
 For authorization, a JWT token is used.  
 Used by AutoMapper, Logger.  
 There are several unit tests with xUnit.  
-Publish 
-dotnet publish -r win-x64 -c Release. 
+Publish  
+dotnet publish -r win-x64 -c Release.  
 Run Kestrel Web Server.   
 dotnet EWarehouse.Web.dll --server.urls "http://localhost:5101;http://*:5102"
 
