@@ -55,7 +55,7 @@ namespace EWarehouse.Services
             return encodedJwt;
         }
 
-        private async Task<ClaimsIdentity> GetIdentity(LoginServiceModel model)//string username, string password)
+        private async Task<ClaimsIdentity> GetIdentity(LoginServiceModel model)
         {
             var user = await _accountService.GetUserAsync(model);
 
