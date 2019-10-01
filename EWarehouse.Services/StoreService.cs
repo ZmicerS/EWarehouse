@@ -28,10 +28,7 @@ namespace EWarehouse.Services
             _logger.LogInformation("AddBookAsync");
             var bookDto = _mapper.Map<Book>(book);
             await _unitOfWork.Books.CreateAsync(bookDto);
-
-            var contentDto = _mapper.Map<BookContent>(book);
-            contentDto.BookId = bookDto.Id;
-
+            
             var coverDto = _mapper.Map<BookCover>(book);
             if (coverDto.LengthOfFile > 0)
             {
@@ -108,13 +105,7 @@ namespace EWarehouse.Services
             bookDto.Quantity = book.Quantity;
             bookDto.LanguageId = book.LanguageId;
 
-            _unitOfWork.Books.Update(bookDto);
-
-            var contentDto = await Task.Run(() => _unitOfWork.BookContents.Get(bc => bc.BookId == book.Id).FirstOrDefault());
-
-            contentDto.Content = book.Content;
-
-            _unitOfWork.BookContents.Update(contentDto);
+            _unitOfWork.Books.Update(bookDto);         
 
             if (book.imageOfCover.LengthOfFile > 0)
             {
