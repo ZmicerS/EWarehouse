@@ -11,7 +11,7 @@ namespace EWarehouse.Web.Services.Filters
         public string StackTrace { get; set; }
     }
 
-    public class GlobalExceptionFilter : IExceptionFilter//, IDisposable
+    public class GlobalExceptionFilter : IExceptionFilter
     {
         private readonly ILogger _logger;
 
