@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
-namespace EWarehouse.Repository//.Account
+namespace EWarehouse.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
