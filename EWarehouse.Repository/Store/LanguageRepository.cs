@@ -6,7 +6,7 @@ namespace EWarehouse.Repository.Store
 {
     public class LanguageRepository : RepositoryBase<Language>
     {
-        public LanguageRepository(DbContext dbContext, ILogger logger) : base(dbContext, logger)//) : base(dbContext)
+        public LanguageRepository(DbContext dbContext, ILogger logger) : base(dbContext, logger)
         {
 
         }
