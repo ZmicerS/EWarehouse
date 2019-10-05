@@ -87,7 +87,7 @@ namespace EWarehouse.Services
         {
             _logger.LogInformation("GetBookAsync");
             var bookDto = await _unitOfWork.Books.GetByIdAsync(id);
-            var contentDto = await Task.Run(() => _unitOfWork.BookContents.Get(c => c.BookId == bookDto.Id).FirstOrDefault());//.GetById(bookDto.Id);
+            var contentDto = await Task.Run(() => _unitOfWork.BookContents.Get(c => c.BookId == bookDto.Id).FirstOrDefault());
 
             var book = _mapper.Map<BookCoreServiceModel>(bookDto);
             book.Content = contentDto?.Content;
